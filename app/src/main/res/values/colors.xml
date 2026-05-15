@@ -1,0 +1,7 @@
+<resources>
+    <color name="brand_green">#1F7A4D</color>
+    <color name="brand_deep">#12372A</color>
+    <color name="surface">#F7FAF6</color>
+    <color name="card">#FFFFFF</color>
+    <color name="accent_gold">#D99A29</color>
+</resources>
