@@ -2,3 +2,15 @@ plugins {
     id("com.android.application") version "9.2.0" apply false
     id("org.jetbrains.kotlin.plugin.compose") version "2.2.10" apply false
 }
+
+def externalBuildRoot = new File(
+    System.getenv("LOCALAPPDATA") ?: rootDir,
+    "CodexGradleBuild/GokulaHealth"
+)
+
+allprojects {
+    layout.buildDirectory = new File(
+        externalBuildRoot,
+        project.path == ":" ? "root" : project.name
+    )
+}
